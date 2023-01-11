@@ -22,7 +22,7 @@ Se liga nessa lista de tudo que usaremos nessa formação:
 - `axios`
 - `Session Storage`
 - `TSDX`
-- `NPM` (no primeiro curso nós criamos uma biblioteca e a publicamos no NPM)
+- `NPM` 
 - `Github Actions`
 
 E muito mais!
