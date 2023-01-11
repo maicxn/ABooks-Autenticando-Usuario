@@ -56,8 +56,8 @@ Com os seguintes dados:
 
 ```
 {
-    "nome": "vinicios neves",
-    "email": "vinicios@alura.com.br",
+    "nome": "Maicon Oliveira",
+    "email": "maiconoliveira@email.com.br",
     "senha": "123456",
     "endereco": "Rua Vergueiro, 3185",
     "complemento": "Vila Mariana",
@@ -80,7 +80,7 @@ Com os seguintes dados:
 
 ```
 {
-  "email": "vinicios@alura.com.br",
+  "email": "maiconoliveira@email.com.br",
   "senha":"123456"
 }
 ```
@@ -101,9 +101,3 @@ E então, adicionar este mesmo token ao header das próximas requisições:
 ```
 Authorization: Bearer <ACCESS_TOKEN>
 ```
-
-## 📚 Mais informações do curso
-
-O AluraBooks é o projeto utilizado durante toda a formação, e essa API será utilizada em vários cursos diferentes :)
-
-O ABooks é o projeto utilizado durante toda a formação, e você pode navegar entre as branchs para encontrar o momento específico que está buscando.

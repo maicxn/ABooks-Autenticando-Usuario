@@ -1,6 +1,4 @@
 import { Link, Outlet } from "react-router-dom"
-import Newsletter from "../../componentes/Newsletter"
-
 import './MinhaConta.css'
 
 const MinhaConta = () => {
