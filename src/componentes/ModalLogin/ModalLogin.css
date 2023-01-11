@@ -1,0 +1,45 @@
+.corpoModalLogin {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+}
+
+.corpoModalLogin form {
+    width: 500px;
+    max-width: 100%;
+}
+
+.corpoModalLogin form .acoes {
+    margin-top: 48px;
+    text-align: center;
+}
+
+.corpoModalLogin footer {
+    margin-top: 40px;
+    text-align: center;
+    gap: 48px;
+}
+
+.anchor {
+    margin-top: 25px;
+    color: #002F52;
+    text-decoration: underline;
+    margin-left: 25px;
+}
+
+.corpoModalLogin hr {
+    margin-top: 50px;
+}
+
+.criarConta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.criarConta h3 {
+    color: #002F52;
+}
+
+ 

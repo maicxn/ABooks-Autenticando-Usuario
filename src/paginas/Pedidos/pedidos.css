@@ -1,0 +1,14 @@
+.pedidos {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+}
+
+.pedidos .dados {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pedidos .dados button {
+    height: 30%;
+}

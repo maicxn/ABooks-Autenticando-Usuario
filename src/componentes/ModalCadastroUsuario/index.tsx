@@ -1,9 +1,15 @@
 import { AbBotao, AbCampoTexto, AbModal } from "ds-alurabooks"
-import { useState } from "react"
+import React, { useState } from "react"
 import imagemPrincipal from './assets/login.png'
 import './ModalCadastroUsuario.css'
+import axios from "axios"
 
-const ModalCadastroUsuario = () => {
+interface modalCadastroProps {
+    aberta: boolean
+    aoFechar: () => void
+}
+
+const ModalCadastroUsuario = ({aberta, aoFechar}: modalCadastroProps) => {
     const [nome, setNome] = useState('')
     const [email, setEmail] = useState('')
     const [endereco, setEndereco] = useState('')
@@ -12,16 +18,46 @@ const ModalCadastroUsuario = () => {
     const [senha, setSenha] = useState('')
     const [confirmarSenha, setConfirmarSenha] = useState('')
 
+    const aoSubmeterFormulario = (evento: React.FormEvent<HTMLFormElement>) => {
+        evento.preventDefault()
+        const usuario = {
+            nome,
+            email,
+            endereco,
+            complemento,
+            cep,
+            senha,
+            confirmarSenha
+        }
+        axios.post('http://localhost:8000/public/registrar', usuario)
+        .then(() => {
+            alert('Usuário cadastrado com sucesso!')
+            setNome('')
+            setEmail('')
+            setEndereco('')
+            setComplemento('')
+            setCep('')
+            setSenha('')
+            setConfirmarSenha('')
+            aoFechar()
+        })
+        .catch(() => {
+            alert('Ops... Algo deu errado!')
+        })
+        
+    }
+
+
     return (
         <AbModal
             titulo="Cadastrar"
-            aberta={true}
-            aoFechar={() => console.log('fecha ai')}>
+            aberta={aberta}
+            aoFechar={aoFechar}>
             <div className="corpoModalCadastro">
                 <figure>
                     <img src={imagemPrincipal} alt="Monitor com uma fechadura e uma pessoa com uma chave logo ao lado." />
                 </figure>
-                <form>
+                <form onSubmit={aoSubmeterFormulario}>
                     <AbCampoTexto
                         label="Nome"
                         value={nome}
