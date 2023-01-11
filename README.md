@@ -1,8 +1,7 @@
-![Integrando seu projeto React com APIs](thumbnail.png)
 
-# AluraBooks
+# ABooks
 
-O AluraBooks é uma loja virtual que vende livros da Casa do Código. 
+O ABooks é uma loja virtual que vende livros da Casa do Código. 
 É um MVP que tá só começando e ainda tem muitas funcionalidades novas para serem desenvolvidas.
 
 # JSONServer + JWT Auth
@@ -28,8 +27,8 @@ Com os seguintes dados:
 
 ```
 {
-    "nome": "vinicios neves",
-    "email": "vinicios@alura.com.br",
+    "nome": "Maicon Oliveira",
+    "email": "maiconoliveira@email.com.br",
     "senha": "123456",
     "endereco": "Rua Vergueiro, 3185",
     "complemento": "Vila Mariana",
@@ -52,7 +51,7 @@ Com os seguintes dados:
 
 ```
 {
-  "email": "vinicios@alura.com.br",
+  "email": "maiconoliveira@email.com.br",
   "senha":"123456"
 }
 ```
@@ -73,7 +72,3 @@ E então, adicionar este mesmo token ao header das próximas requisições:
 ```
 Authorization: Bearer <ACCESS_TOKEN>
 ```
-
-## 📚 Mais informações do curso
-
-O AluraBooks é o projeto utilizado durante toda a formação, e essa API será utilizada em vários cursos diferentes :)
